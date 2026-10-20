@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sysmac Project Interpretation"
+  short_description: "Explain Sysmac logic with traceable source evidence"
+  default_prompt: "Use $sysmac-project-interpretation to interpret this saved Sysmac project, trace its execution path, and explain findings with source evidence."

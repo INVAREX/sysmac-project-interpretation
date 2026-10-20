@@ -1,0 +1,20 @@
+{
+  "name": "sysmac-github",
+  "interface": {
+    "displayName": "Sysmac Plugins"
+  },
+  "plugins": [
+    {
+      "name": "sysmac-project-interpretation",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sysmac-project-interpretation"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

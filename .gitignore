@@ -1,0 +1,32 @@
+# Project inputs and generated machine evidence
+*.smc2
+*.smc
+*.acd
+*.apa
+decoded/
+samples/
+generated/
+Rockwell/
+
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.skill-validation/
+
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.codex/
+.aws/
+
+# Local packages and OS files
+*.zip
+.DS_Store
+Thumbs.db
+Desktop.ini
