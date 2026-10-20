@@ -5,7 +5,7 @@
 
 A ChatGPT and Codex plugin for interpreting saved Omron Sysmac Studio projects with traceable source evidence.
 
-The plugin includes a reusable skill, focused interpretation references, and a Python helper that decodes `.smc2` archives, searches extracted source, and compares revisions. Source projects are read without modification. Machine projects, historical reviews, and decoded machine data are excluded from this repository.
+The plugin includes a reusable skill, focused interpretation references, and a Python helper that decodes `.smc2` archives, searches extracted source, and compares revisions. Source projects are read without modification.
 
 ## Install from GitHub
 
@@ -54,8 +54,6 @@ The helper tests cover extraction fidelity, unchanged source archives, NA variab
 ## Package boundaries
 
 This plugin interprets saved project evidence. It does not decrypt protected code, generate native project edits, operate physical controllers, or validate safety functions. Unsupported content and external dependencies must remain explicit in findings.
-
-The original project corpus is not required by the skill. Test fixtures are synthetic, and the repository's ignore rules exclude project archives, decoded outputs, credentials, and local caches.
 
 ## Official plugin documentation
 

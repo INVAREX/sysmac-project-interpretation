@@ -36,4 +36,4 @@ Carry accepted risks only when the user's current context establishes they apply
 - **Native build/compile:** actually performed in the relevant Sysmac/NA environment with results recorded.
 - **Native simulation/runtime/hardware verification:** only claim the exact environment and behavior actually exercised.
 
-No clean symbol audit or fixed number of assertions substitutes for compile, full simulation, retained-data migration checks, or engineer verification. At delivery, summarize the inspected scope, principal behavior/findings, evidence links, and material unknowns. Link the new decode's relative paths; old absolute Windows paths in archived reviews are historical references.
+No clean symbol audit or fixed number of assertions substitutes for compile, full simulation, retained-data migration checks, or engineer verification. At delivery, summarize the inspected scope, principal behavior/findings, evidence links, and material unknowns. Link evidence using paths relative to the current decode directory.

@@ -1,6 +1,6 @@
 # HMI and interface interpretation
 
-Read HMI source when the requested behavior depends on a screen, operator action, alarm, recipe entry, or upgrade compatibility. HMI and PLC revisions must be identified independently. The supplied material demonstrated that the live HMI and an adapted target HMI can have very different compatibility even when their names are similar.
+Read HMI source when the requested behavior depends on a screen, operator action, alarm, recipe entry, or upgrade compatibility. HMI and PLC revisions must be identified independently. HMI revisions can differ in PLC compatibility even when their names are similar.
 
 ## Trace the binding chain
 

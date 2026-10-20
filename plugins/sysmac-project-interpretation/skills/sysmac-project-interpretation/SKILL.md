@@ -9,7 +9,7 @@ Explain what the saved project actually does and how the evidence supports that 
 
 ## ChatGPT execution context
 
-Use the source file path exposed by the current session, including an attached-file path when supplied. Resolve bundled helper paths relative to this skill rather than assuming a Windows home directory or access to the original workspace. Choose the available Python executable and a writable output directory in the session.
+Use the source file path exposed by the current session, including an attached-file path when supplied. Resolve bundled helper paths relative to this skill using paths available in the current session. Choose the available Python executable and a writable output directory in the session.
 
 Raw `.smc2` decoding requires file access and Python execution. If those tools are unavailable, interpret accessible readable exports or decoded evidence and state the resulting coverage limit. Do not claim to have opened or decoded an archive from its filename or metadata alone. Ask for the missing source evidence only when it is necessary to answer the actual question.
 
@@ -52,4 +52,3 @@ State what was inspected and what remains unknown. Archive decoding, static asse
 - [Sequence and recovery review](references/sequences-and-recovery.md): timing, retention, queues, reset and retry.
 - [HMI and interface interpretation](references/hmi-and-interfaces.md): NA data, bindings, alarms, external contracts.
 - [Revision comparisons and reports](references/comparison-and-reporting.md): matching, evidence, validation wording.
-- [Source provenance](references/source-provenance.md): where this skill's reusable knowledge came from; historical examples are not current findings.

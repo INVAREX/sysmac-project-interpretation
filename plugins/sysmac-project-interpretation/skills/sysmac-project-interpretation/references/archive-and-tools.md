@@ -2,7 +2,7 @@
 
 ## Container evidence
 
-The supplied projects are ZIP containers. Their solution `.oem` XML is an entity graph; `ChildEntities/Entity` carries the hierarchy. Entity attributes include `id`, `type`, `subtype`, and `name`. Payload filenames often use the entity ID as their stem. Do not invent filenames from display names or assume the first XML file is the code.
+The helper reads `.smc2` archives as ZIP containers. Their solution `.oem` XML is an entity graph; `ChildEntities/Entity` carries the hierarchy. Entity attributes include `id`, `type`, `subtype`, and `name`. Payload filenames often use the entity ID as their stem. Do not invent filenames from display names or assume the first XML file is the code.
 
 Observed surfaces:
 
@@ -45,7 +45,7 @@ The destination must be absent or empty. Output filenames use hashes of entity/m
 
 Each ladder record includes `index` (zero-based archive order), `source_line` (one-based payload line), and complete `data`. Invalid lines are retained in the raw file and identified as errors; valid later lines are still decoded. Rung indexes include malformed nonempty records so a partial decode does not silently renumber later evidence. Comments and horizontal lines are preserved.
 
-SLWD `++` records are parsed as tab-separated `key=value` fields. `N` and `D` identify name and declaration type; retain `G`, `R`, addressing, and other fields verbatim. `R=1` appeared on retained declarations in the corpus; check its meaning in the target project/version when retention matters. The helper does not infer values at runtime.
+SLWD `++` records are parsed as tab-separated `key=value` fields. `N` and `D` identify name and declaration type; retain `G`, `R`, addressing, and other fields verbatim. Check retention-related fields such as `R` in the target project/version when retention matters. The helper does not infer values at runtime.
 
 `find` performs a literal, case-insensitive search of decoded text and returns source member, entity, payload line, and matching text as JSON. This is discovery evidence, not symbol resolution or proof of an absent writer. It searches all extracted text, including metadata and HMI text when selected.
 

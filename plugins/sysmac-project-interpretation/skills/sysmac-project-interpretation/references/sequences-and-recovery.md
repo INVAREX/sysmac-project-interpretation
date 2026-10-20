@@ -17,7 +17,7 @@ Trace a requested sequence from task entry to its observable completion. Use a t
 
 For a concrete issue, show a short timeline with the minimum triggering conditions. For example: a load request waits for lane readiness; Auto drops in the same scan readiness becomes true; an early search consumes the queue before a later abort branch can act. Confirm the actual current guards and rung order before applying this pattern.
 
-Other patterns recovered from the source material:
+Additional patterns to investigate:
 
 - A search can return the correct model index while later copies read an unrelated manual-entry index. Trace data provenance across each copied field.
 - Publishing load completion before setting an active flag or copying required model data leaves downstream consumers with inconsistent state.
